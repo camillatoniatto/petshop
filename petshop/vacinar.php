@@ -23,5 +23,5 @@
     }
     fclose($arquivo);
     echo "<script>alert('Animal vacinado!');
-            window.location.href='index.php';</script>";
+            window.location.href='pets.php';</script>";
 ?>

@@ -23,17 +23,20 @@
     </head>
 
     <header>   
-            <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    <div class="container-fluid" style="background-color: #754BBD">
+        <br>
+        <center><img src="imagens/logo-petshop.png" width="25%" height="25%"></center>            
+            <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #754BBD">
                 <div class="container-fluid">                    
-                   <h1 class="text-light">
+                   <h3 class="text-light">
                    <!--LINK ICONE AQUI-->
-                   PetShop</h1>
+                   PetShop</h3>
                    <ul class="nav justify-content-end">
                        <li class="nav-item">                                                                          
                            <a href="index.php"><button type="button" class="btn btn-outline-light btn-sm">Início</button></a> 
                            <a href="pets.php"><button type="button" class="btn btn-outline-light btn-sm">Nossos clientes</button></a>
                            <button type=" " class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#cadastroModal">Cadastre meu pet</button>                                                 
-                       </il>
+                       </li>
                     </ul>
                 </div>
             </nav>             
@@ -73,8 +76,8 @@
                                     <!--BOTÃO FORMULARIO-->
                                     <div class="position-relative">
                                         <div class="position-absolute bottom-0 end-0">
-                                            <a href="pets.php"><button type="button" class="btn btn-outline-secondary">Voltar</button></a>
-                                            <button type="submit" class="btn btn-outline-danger">Agendar vacina!</button>
+                                            <a href="index.php"><button type="button" class="btn btn-outline-secondary">Voltar</button></a>
+                                            <button type="submit" class="btn btn btn-warning">Agendar vacina!</button>
                                         </div>
                                     </div>
                                 </form>
@@ -105,11 +108,11 @@
              </div>
      
      
-         <footer>
+        <footer>
              <hr>
-             <nav class="navbar fixed-bottom navbar-dark bg-dark">
+             <nav class="navbar fixed-bottom navbar navbar-light" style="background-color: #754BBD">
                  <div class="container-fluid">                  
-                     <p class="text-light"> Desenvolvido por: ..</p>
+                     <p class="text-light"> Desenvolvido por: Camilla Toniatto e Manoela Albuquerque</p>
                  </div>
              </nav>
          </footer>

@@ -15,41 +15,29 @@
         <meta name="description" content="Petshop">
         <meta name="keywords" content="html,php">
         <meta name="robots" content="index.html">
-        <title>KATIAU automóveis</title>
+        <title>Petshop</title>
         <!-- STYLESHEET -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <style><!--body {background-color: lightgrey;}-->
-        .card img {
-            margin-top: 15px;
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-            max-width: 130px;
-        }
 
-        .card {
-            margin-left: 20px;
-            width: 400px;
-            background: #fff;
-
-        }
-        </style>
     </head>
     <body>
         <!--JS PARA O MODAL FUNCIONAR-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <header>   
-            <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <div class="container-fluid" style="background-color: #754BBD">
+        <br>
+        <center><img src="imagens/logo-petshop.png" width="25%" height="25%"></center>            
+            <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #754BBD">
                 <div class="container-fluid">                    
-                   <h1 class="text-light">
+                   <h3 class="text-light">
                    <!--LINK ICONE AQUI-->
-                   PetShop</h1>
+                   PetShop</h3>
                    <ul class="nav justify-content-end">
                        <li class="nav-item">                                                                          
                            <a href="index.php"><button type="button" class="btn btn-outline-light btn-sm">Início</button></a> 
                            <a href="pets.php"><button type="button" class="btn btn-outline-light btn-sm">Nossos clientes</button></a>
                            <button type=" " class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#cadastroModal">Cadastre meu pet</button>                                                 
-                       </il>
+                       </li>
                     </ul>
                 </div>
             </nav>             
@@ -93,7 +81,7 @@
                                             <td><?php echo $pets[$i+3]; ?></td>
                                             <td><?php echo $pets[$i+4]; ?></td> 
                                             <td><?php echo $pets[$i+5]; ?></td>
-                                            <td> <a href="vacinar2.php?posicao=<?php echo $i; ?>" class="btn btn-outline-info btn-sm">Vacinar!</a>  <a href="excluir.php?posicao=<?php echo $i; ?>" class="btn btn-outline-danger btn-sm">Excluir</a></td>                                             
+                                            <td> <a href="vacinar2.php?posicao=<?php echo $i; ?>" class="btn btn btn-warning btn-sm">Vacinar!</a>  <a href="excluir.php?posicao=<?php echo $i; ?>" class="btn btn-outline-secondary btn-sm">Excluir</a></td>                                             
                                             <?php
                                                 $i = $i + 6;
                                                 echo "</tr>";
@@ -131,9 +119,9 @@
      
          <footer>
              <hr>
-             <nav class="navbar fixed-bottom navbar-dark bg-dark">
+             <nav class="navbar fixed-bottom navbar navbar-light" style="background-color: #754BBD">
                  <div class="container-fluid">                  
-                     <p class="text-light"> Desenvolvido por: ..</p>
+                     <p class="text-light"> Desenvolvido por: Camilla Toniatto e Manoela Albuquerque</p>
                  </div>
              </nav>
          </footer>

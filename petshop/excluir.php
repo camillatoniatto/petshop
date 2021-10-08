@@ -28,6 +28,6 @@
     fclose($arquivo);
     echo "<script>
             alert('Cadastro excluido com sucesso!');
-            window.location.href='index.php';
+            window.location.href='pets.php';
             </script>";
 ?>
